@@ -16,6 +16,7 @@ dependencies {
 	}
 	
  3.编写主活动代码，实现跳转：
+ 
 package com.wxb.wxbzxing;
 import android.Manifest;
 import android.app.Activity;
@@ -28,7 +29,6 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.view.View;
 import android.widget.Toast;
-
 import com.wxb.zxing.Activity.CaptureActivity;
 
 public class MainActivity extends Activity {
