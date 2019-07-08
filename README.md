@@ -2,6 +2,7 @@
 这是一个完整的zing项目，包含library,可远程依赖。
 一句话添加依赖如下：
 1.首先在根目录build.gradle下添加仓库地址
+
 	allprojects {
 		repositories {
 			...
@@ -13,6 +14,7 @@
 dependencies {
 	        implementation 'com.github.GitHubwbb123:Wxbzxing:1.0.0'
 	}
+	
  3.编写主活动代码，实现跳转：
 package com.wxb.wxbzxing;
 import android.Manifest;
