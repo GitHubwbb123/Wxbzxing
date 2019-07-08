@@ -66,11 +66,17 @@ public class MainActivity extends Activity {
         init();
     }
 //这里可改为按钮，因为图片点击事件用到了背景图，在布局文件里，这里直接写个按钮替换就好
+
     private void init() {
+    
         findViewById(R.id.ll_scan).setOnClickListener(new View.OnClickListener() {
+	
             @Override
+	    
             public void onClick(View v) {
+	    
                 getRuntimeRight();
+		
             }
         });
     }
