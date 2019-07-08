@@ -18,28 +18,49 @@ dependencies {
  3.编写主活动代码，实现跳转：
  
 package com.wxb.wxbzxing;
+
 import android.Manifest;
+
 import android.app.Activity;
+
 import android.content.Context;
+
 import android.content.Intent;
+
 import android.content.pm.PackageManager;
+
 import android.os.Bundle;
+
 import android.support.annotation.NonNull;
+
 import android.support.v4.app.ActivityCompat;
+
 import android.support.v4.content.ContextCompat;
+
 import android.view.View;
+
 import android.widget.Toast;
+
 import com.wxb.zxing.Activity.CaptureActivity;
 
+
 public class MainActivity extends Activity {
+
     private Context mContext;
+    
     private Activity mActivity;
+    
     private static final int REQUEST_SCAN = 0;
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+    
         super.onCreate(savedInstanceState);
+	
         setContentView(R.layout.activity_main);
+	
         mContext = this;
+	
         mActivity = this;
 
         init();
